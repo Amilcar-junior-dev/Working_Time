@@ -1,11 +1,10 @@
-/* eslint-disable prettier/prettier */
 import React from 'react';
 import {View, Text} from 'react-native';
 
 const App = () => {
   return (
     <View>
-      <Text> Hello Word...</Text>
+      <Text> Hello Word</Text>
     </View>
   );
 };
