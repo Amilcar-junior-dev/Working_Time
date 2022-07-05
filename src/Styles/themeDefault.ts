@@ -45,10 +45,26 @@ const spaces = {
       xxxbig: theme.MARGIN_HORIZONTAL_XXXBIG,
     },
   },
+  padding: {
+    smaller: theme.PADDING_SMALLER,
+    small: theme.PADDING_SMALL,
+    medium: theme.PADDING_MEDIUM,
+    big: theme.PADDING_BIG,
+    xbig: theme.PADDING_XBIG,
+    xxbig: theme.PADDING_XXBIG,
+    xxxbig: theme.PADDING_XXXBIG,
+  },
+};
+const fontWeigth = {
+  ligth: theme.FONT_WEIGTH_LIGTH,
+  medium: theme.FONT_WEIGTH_MEDIUM,
+  bold: theme.FONT_WEIGTH_BOLD,
+  black: theme.FONT_WEIGTH_BLACK,
 };
 
 export default {
   fontSize,
   borderRadius,
   spaces,
+  fontWeigth,
 };

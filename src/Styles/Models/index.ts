@@ -1,6 +1,7 @@
 export interface PropsThemeDefault {
   fontSize?: fontSizeProps;
   borderRadius?: borderRadiusProps;
+  spaces?: spacesProps;
 }
 
 interface fontSizeProps {
@@ -44,3 +45,32 @@ interface spacesProps {
     };
   };
 }
+
+export type PropsSpaceHorizontal =
+  | 'micro'
+  | 'nano'
+  | 'smaller'
+  | 'small'
+  | 'medium'
+  | 'big'
+  | 'xbig'
+  | 'xxbig'
+  | 'xxxbig';
+export type PropsSpaceVertical =
+  | 'micro'
+  | 'nano'
+  | 'smaller'
+  | 'small'
+  | 'medium'
+  | 'big'
+  | 'xbig'
+  | 'xxbig'
+  | 'xxxbig';
+export type PropsPadding =
+  | 'smaler'
+  | 'small'
+  | 'medium'
+  | 'big'
+  | 'xbig'
+  | 'xxbig'
+  | 'xxxbig';
