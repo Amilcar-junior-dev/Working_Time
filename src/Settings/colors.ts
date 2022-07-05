@@ -1,0 +1,17 @@
+export const PRIMARY_BASE_900 = '#000000';
+export const PRIMARY_BASE_800 = '#131313';
+export const PRIMARY_BASE_700 = '#272727';
+export const PRIMARY_BASE_600 = '#383838';
+export const PRIMARY_BASE_500 = '#3D3D3D';
+export const PRIMARY_BASE_400 = '#656565';
+export const ALERTY_BASE_900 = '#C60202';
+export const ALERTY_BASE_800 = '#FF0000';
+export const SECUNDARY_BASE_02 = '#FF6B00';
+export const SECUNDARY_BASE_03 = '#FFB800';
+export const SECUNDARY_BASE_04 = '#B8B205';
+export const SECUNDARY_BASE_05 = '#2D00E2';
+export const SECUNDARY_BASE_06 = '#043DB0';
+export const SECUNDARY_BASE_07 = '#00FF00';
+export const SECUNDARY_BASE_08 = '#0DEB09';
+export const LIGHT_BASE_900 = '#FFFFFF';
+export const LIGHT_BASE_800 = '#D9D9D9';
