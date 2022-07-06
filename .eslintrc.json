@@ -23,9 +23,10 @@
        "import-helpers/order-imports": [
            "warn",
             {
-               "newlinesBetween":"always",
-               "groups": [
-                    "module",
+               "newlinesBetween":"always", 
+               "groups": [ 
+                    "/^react/", 
+                    "module", 
                     ["parent","sibling","index"]
                 ],
                " alphabetize": { "order":"asc", "ignoreCase": true }

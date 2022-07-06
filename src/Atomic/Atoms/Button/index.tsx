@@ -1,8 +1,14 @@
 import React from 'react';
-import {TouchableOpacity} from './Styles';
+import {Text} from 'react-native';
+import {TouchableOpacity} from './styles';
+import {PropsButton} from './Models';
 
-const Button = () => {
-  return <TouchableOpacity />;
-};
+function Button({mt, mb, ml, mr, text, onPress}: PropsButton) {
+  return (
+    <TouchableOpacity mt={mt} mb={mb} ml={ml} mr={mr} onPress={() => onPress()}>
+      <Text>{text}</Text>
+    </TouchableOpacity>
+  );
+}
 
 export default Button;
