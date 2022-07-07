@@ -26,9 +26,9 @@ const Text: React.FC<PropsText> = ({
       mr={mr}
       padding={padding}
       underline={underline}
-      align={align}
-      children={children}
-    />
+      align={align}>
+      {children}
+    </TextRegular>
   );
 };
 export default Text;

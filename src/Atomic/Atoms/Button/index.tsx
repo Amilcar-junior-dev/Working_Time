@@ -1,7 +1,7 @@
 import React from 'react';
-import {TouchableOpacity} from './styles';
 import {PropsButton} from './Models';
 import Text from '../../Atoms/Text';
+import {TouchableOpacity} from './Styles';
 
 function Button({mt, mb, ml, mr, text, height, width, onPress}: PropsButton) {
   return (

@@ -5,13 +5,14 @@ import Button from './Atomic/Atoms/Button';
 
 const App = () => {
   return (
-    <View>
+    // eslint-disable-next-line react-native/no-inline-styles
+    <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
       <Button
         // eslint-disable-next-line no-undef
         onPress={() => onPress()}
         text="Clique em min"
-        height={30}
-        mt="medium"
+        height="30px"
+        width="80px"
       />
     </View>
   );
