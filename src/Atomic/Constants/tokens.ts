@@ -1,4 +1,5 @@
 import * as breadh from '../../Settings/environment';
+import * as theme from '../../Styles/themeDefault';
 
 type MapOptions = {
   [key: string]: any;
@@ -43,4 +44,22 @@ export const transformMarginVertical = (margin?: string) => {
       : mapVerticalMargin.undefined;
   }
   return mapVerticalMargin.undefined;
+};
+
+const mapPadding: MapOptions = {
+  smaller: theme.default.spaces.padding.smaller,
+  small: theme.default.spaces.padding.small,
+  big: theme.default.spaces.padding.big,
+  xbig: theme.default.spaces.padding.xbig,
+  xxbig: theme.default.spaces.padding.xxbig,
+  xxxbig: theme.default.spaces.padding.xxxbig,
+};
+
+export const transformPadding = (padding: string) => {
+  if (padding) {
+    return mapPadding.hasOwnProperty(padding)
+      ? mapPadding[padding]
+      : mapPadding.undefined;
+  }
+  return mapPadding.undefined;
 };

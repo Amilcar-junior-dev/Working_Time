@@ -13,6 +13,7 @@ const App = () => {
         text="Clique em min"
         height="30px"
         width="80px"
+        padding="big"
       />
     </View>
   );

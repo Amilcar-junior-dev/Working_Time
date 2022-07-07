@@ -8,6 +8,7 @@ export interface PropsText {
   fontSize?: string | number;
   fontWeigth?: string | number;
   color?: string;
+  pd?: PropsPadding;
   mt?: PropsSpaceHorizontal;
   mb?: PropsSpaceHorizontal;
   ml?: PropsSpaceVertical;

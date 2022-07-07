@@ -62,6 +62,14 @@ interface spacesProps {
       xxbig: string;
       xxxbig: string;
     };
+    padding: {
+      smaller: string;
+      small: string;
+      big: string;
+      xbig: string;
+      xxbig: string;
+      xxxbg: string;
+    };
   };
 }
 
@@ -86,7 +94,7 @@ export type PropsSpaceVertical =
   | 'xxbig'
   | 'xxxbig';
 export type PropsPadding =
-  | 'smaler'
+  | 'smaller'
   | 'small'
   | 'medium'
   | 'big'
