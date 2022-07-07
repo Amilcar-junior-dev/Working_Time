@@ -3,6 +3,25 @@ export interface PropsThemeDefault {
   borderRadius?: borderRadiusProps;
   spaces?: spacesProps;
 }
+export interface Propscolors {
+  PRIMARY_BASE_900: string;
+  PRIMARY_BASE_800: string;
+  PRIMARY_BASE_700: string;
+  PRIMARY_BASE_600: string;
+  PRIMARY_BASE_500: string;
+  PRIMARY_BASE_400: string;
+  ALERTY_BASE_900: string;
+  ALERTY_BASE_800: string;
+  SECUNDARY_BASE_02: string;
+  SECUNDARY_BASE_03: string;
+  SECUNDARY_BASE_04: string;
+  SECUNDARY_BASE_05: string;
+  SECUNDARY_BASE_06: string;
+  SECUNDARY_BASE_07: string;
+  SECUNDARY_BASE_08: string;
+  LIGHT_BASE_900: string;
+  LIGHT_BASE_800: string;
+}
 
 interface fontSizeProps {
   smaller: number;

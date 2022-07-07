@@ -3,6 +3,8 @@ import {
   PropsSpaceVertical,
 } from '../../../../Styles/Models';
 export interface PropsButton {
+  height?: string | number;
+  width?: string | number;
   text?: string;
   mt?: PropsSpaceHorizontal;
   mb?: PropsSpaceHorizontal;
