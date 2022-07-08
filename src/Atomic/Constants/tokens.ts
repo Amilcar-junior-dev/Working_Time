@@ -81,6 +81,19 @@ export const transformFontSize = (fontSize: string) => {
   }
   return mapFontSize.undefined;
 };
+const mapBorderRadius: MapOptions = {
+  normal: theme.default.borderRadius.normal,
+  medium: theme.default.borderRadius.medium,
+  big: theme.default.borderRadius.big,
+};
+export const transformBorderRadius = (borderRadius?: string) => {
+  if (borderRadius) {
+    return mapBorderRadius.hasOwnProperty(borderRadius)
+      ? mapBorderRadius[borderRadius]
+      : mapBorderRadius.undefined;
+  }
+  return mapBorderRadius.undefined;
+};
 
 export const mapColors = (color: any) => {
   const data: MapOptions = {

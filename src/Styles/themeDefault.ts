@@ -11,7 +11,7 @@ const fontSize = {
 };
 
 const borderRadius = {
-  none: theme.BORDER_RADIUS_NONE,
+  normal: theme.BORDER_RADIUS_NORMAL,
   medium: theme.BORDER_READIUS_MEDIUM,
   big: theme.BORDER_RADIUS_BIG,
 };

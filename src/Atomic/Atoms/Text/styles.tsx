@@ -10,7 +10,7 @@ import {
 
 export const TextRegular = styled.Text<PropsText>`
   font-size: ${({fontSize}) =>
-    fontSize ? transformFontSize(fontSize) : themes.fontSize.small}px;
+    fontSize ? transformFontSize(fontSize) : themes.fontSize.smaller}px;
   font-weight: ${({fontWeigth}) => (fontWeigth ? fontWeigth : 'auto')};
   color: ${({color}) => (color ? color : themes.LIGHT_BASE_900)};
   padding: ${({pd}) => (pd ? transformPadding(pd) : 0)}px;

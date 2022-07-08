@@ -1,4 +1,4 @@
-export const BORDER_RADIUS_NONE = 0;
+export const BORDER_RADIUS_NORMAL = 5;
 export const BORDER_READIUS_MEDIUM = 10;
 export const BORDER_RADIUS_BIG = 20;
 export const FONT_SIZE_SMALLER = 10;

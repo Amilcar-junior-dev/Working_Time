@@ -34,7 +34,7 @@ interface fontSizeProps {
 }
 
 interface borderRadiusProps {
-  none: number;
+  normal: number;
   medium: number;
   big: number;
 }
@@ -127,3 +127,4 @@ export type PropsFontSize =
   | 'big'
   | 'xbig'
   | 'xxbig';
+export type PropsBorderRadius = 'normal' | 'medium' | 'big';
