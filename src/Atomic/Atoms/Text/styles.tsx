@@ -1,16 +1,18 @@
 import styled from 'styled-components/native';
-import {defaultColors} from '../../../Styles/themeDefault';
+import {themes} from '../../../Styles/themeDefault';
 import {PropsText} from './Models';
 import {
   transformMarginHorizontal,
   transformMarginVertical,
   transformPadding,
+  transformFontSize,
 } from '../../Constants/tokens';
 
 export const TextRegular = styled.Text<PropsText>`
-  font-size: ${({fontSize}) => (fontSize ? fontSize : 10)}px;
+  font-size: ${({fontSize}) =>
+    fontSize ? transformFontSize(fontSize) : themes.fontSize.small}px;
   font-weight: ${({fontWeigth}) => (fontWeigth ? fontWeigth : 'auto')};
-  color: ${({color}) => (color ? color : defaultColors.LIGHT_BASE_800)};
+  color: ${({color}) => (color ? color : themes.LIGHT_BASE_900)};
   padding: ${({pd}) => (pd ? transformPadding(pd) : 0)}px;
   margin-top: ${({mt}) => (mt ? transformMarginHorizontal(mt) : 0)}px;
   margin-bottom: ${({mb}) => (mb ? transformMarginHorizontal(mb) : 0)}px;

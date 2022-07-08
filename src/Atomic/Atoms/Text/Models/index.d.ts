@@ -2,10 +2,11 @@ import {
   PropsSpaceHorizontal,
   PropsSpaceVertical,
   PropsPadding,
+  PropsFontSize,
 } from '../../../../Styles/Models';
 
 export interface PropsText {
-  fontSize?: string | number;
+  fontSize?: PropsFontSize;
   fontWeigth?: string | number;
   color?: string;
   pd?: PropsPadding;

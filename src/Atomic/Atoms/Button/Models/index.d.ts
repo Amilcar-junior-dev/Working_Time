@@ -2,12 +2,15 @@ import {
   PropsSpaceHorizontal,
   PropsSpaceVertical,
   PropsPadding,
+  PropsColors,
 } from '../../../../Styles/Models';
+// import {defaultColors} from '../../../../Styles/themeDefault';
 export interface PropsButton {
   height?: string | number;
   width?: string | number;
   text?: string;
-  padding?: PropsPadding;
+  color?: string;
+  pd?: PropsPadding;
   mt?: PropsSpaceHorizontal;
   mb?: PropsSpaceHorizontal;
   ml?: PropsSpaceVertical;
@@ -17,6 +20,7 @@ export interface PropsButton {
 export interface PropsTouchableOpacity {
   height?: string | number;
   width?: string | number;
+  color?: PropsColors;
   pd?: PropsPadding;
   mt?: PropsSpaceHorizontal;
   mb?: PropsSpaceHorizontal;

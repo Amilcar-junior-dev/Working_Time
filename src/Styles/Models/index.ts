@@ -2,8 +2,9 @@ export interface PropsThemeDefault {
   fontSize?: fontSizeProps;
   borderRadius?: borderRadiusProps;
   spaces?: spacesProps;
+  colors?: colorsProps;
 }
-export interface Propscolors {
+interface colorsProps {
   PRIMARY_BASE_900: string;
   PRIMARY_BASE_800: string;
   PRIMARY_BASE_700: string;
@@ -101,3 +102,28 @@ export type PropsPadding =
   | 'xbig'
   | 'xxbig'
   | 'xxxbig';
+export type PropsColors =
+  | 'PRIMARY_BASE_900'
+  | 'PRIMARY_BASE_800'
+  | 'PRIMARY_BASE_700'
+  | 'PRIMARY_BASE_600'
+  | 'PRIMARY_BASE_500'
+  | 'PRIMARY_BASE_400'
+  | 'ALERTY_BASE_900'
+  | 'ALERTY_BASE_800'
+  | 'SECUNDARY_BASE_02'
+  | 'SECUNDARY_BASE_03'
+  | 'SECUNDARY_BASE_04'
+  | 'SECUNDARY_BASE_05'
+  | 'SECUNDARY_BASE_06'
+  | 'SECUNDARY_BASE_07'
+  | 'SECUNDARY_BASE_08'
+  | 'LIGHT_BASE_900'
+  | 'LIGHT_BASE_800';
+export type PropsFontSize =
+  | 'smaller'
+  | 'small'
+  | 'average'
+  | 'big'
+  | 'xbig'
+  | 'xxbig';

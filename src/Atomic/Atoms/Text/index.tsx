@@ -10,7 +10,7 @@ const Text: React.FC<PropsText> = ({
   mb,
   ml,
   mr,
-  padding,
+  pd,
   underline,
   align,
   children,
@@ -24,7 +24,7 @@ const Text: React.FC<PropsText> = ({
       mb={mb}
       ml={ml}
       mr={mr}
-      padding={padding}
+      pd={pd}
       underline={underline}
       align={align}>
       {children}

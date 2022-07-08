@@ -1,10 +1,6 @@
 import * as colors from '../Settings/colors';
 import * as theme from '../Settings/environment';
 
-export const defaultColors = {
-  ...colors,
-};
-
 const fontSize = {
   smaller: theme.FONT_SIZE_SMALLER,
   small: theme.FONT_SIZE_SMALL,
@@ -67,4 +63,9 @@ export default {
   borderRadius,
   spaces,
   fontWeigth,
+};
+
+export const themes = {
+  ...colors,
+  fontSize,
 };

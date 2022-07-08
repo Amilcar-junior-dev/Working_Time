@@ -3,6 +3,7 @@ import {
   transformMarginHorizontal,
   transformMarginVertical,
   transformPadding,
+  // mapColors,
 } from '../../Constants/tokens';
 import {PropsTouchableOpacity} from './Models';
 

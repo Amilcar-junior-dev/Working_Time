@@ -63,3 +63,46 @@ export const transformPadding = (padding: string) => {
   }
   return mapPadding.undefined;
 };
+
+const mapFontSize: MapOptions = {
+  smaller: theme.default.fontSize.smaller,
+  small: theme.default.fontSize.small,
+  average: theme.default.fontSize.average,
+  big: theme.default.fontSize.big,
+  xbig: theme.default.fontSize.xbig,
+  xxbig: theme.default.fontSize.xxbig,
+};
+
+export const transformFontSize = (fontSize: string) => {
+  if (fontSize) {
+    return mapFontSize.hasOwnProperty(fontSize)
+      ? mapFontSize[fontSize]
+      : mapFontSize.undefined;
+  }
+  return mapFontSize.undefined;
+};
+
+export const mapColors = (color: any) => {
+  const data: MapOptions = {
+    PRIMARY_BASE_900: color.PRIMARY_BASE_900,
+    PRIMARY_BASE_800: color.PRIMARY_BASE_800,
+    PRIMARY_BASE_700: color.PRIMARY_BASE_700,
+    PRIMARY_BASE_600: color.PRIMARY_BASE_600,
+    PRIMARY_BASE_500: color.PRIMARY_BASE_500,
+    PRIMARY_BASE_400: color.PRIMARY_BASE_400,
+    ALERTY_BASE_900: color.ALERTY_BASE_900,
+    ALERTY_BASE_800: color.ALERTY_BASE_800,
+    SECUNDARY_BASE_02: color.SECUNDARY_BASE_02,
+    SECUNDARY_BASE_03: color.SECUNDARY_BASE_03,
+    SECUNDARY_BASE_04: color.SECUNDARY_BASE_04,
+    SECUNDARY_BASE_05: color.SECUNDARY_BASE_05,
+    SECUNDARY_BASE_06: color.SECUNDARY_BASE_06,
+    SECUNDARY_BASE_07: color.SECUNDARY_BASE_07,
+    SECUNDARY_BASE_08: color.SECUNDARY_BASE_08,
+    LIGHT_BASE_900: color.LIGHT_BASE_900,
+    LIGHT_BASE_800: color.LIGHT_BASE_800,
+    transparente: 'transparente',
+    undefined: color.LIGHT_BASE_800,
+  };
+  return data;
+};
