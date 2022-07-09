@@ -14,6 +14,7 @@ const borderRadius = {
   normal: theme.BORDER_RADIUS_NORMAL,
   medium: theme.BORDER_READIUS_MEDIUM,
   big: theme.BORDER_RADIUS_BIG,
+  xbig: theme.BORDER_RADIUS_XBIG,
 };
 
 const spaces = {
@@ -57,6 +58,25 @@ const fontWeigth = {
   bold: theme.FONT_WEIGTH_BOLD,
   black: theme.FONT_WEIGTH_BLACK,
 };
+const colorsEnvironment = {
+  PRIMARY_BASE_900: colors.PRIMARY_BASE_900,
+  PRIMARY_BASE_800: colors.PRIMARY_BASE_800,
+  PRIMARY_BASE_700: colors.PRIMARY_BASE_700,
+  PRIMARY_BASE_600: colors.PRIMARY_BASE_600,
+  PRIMARY_BASE_500: colors.PRIMARY_BASE_500,
+  PRIMARY_BASE_400: colors.PRIMARY_BASE_400,
+  ALERTY_BASE_900: colors.ALERTY_BASE_900,
+  ALERTY_BASE_800: colors.ALERTY_BASE_800,
+  SECUNDARY_BASE_02: colors.SECUNDARY_BASE_02,
+  SECUNDARY_BASE_03: colors.SECUNDARY_BASE_04,
+  SECUNDARY_BASE_04: colors.SECUNDARY_BASE_04,
+  SECUNDARY_BASE_05: colors.SECUNDARY_BASE_05,
+  SECUNDARY_BASE_06: colors.SECUNDARY_BASE_07,
+  SECUNDARY_BASE_07: colors.SECUNDARY_BASE_07,
+  SECUNDARY_BASE_08: colors.SECUNDARY_BASE_08,
+  LIGHT_BASE_900: colors.LIGHT_BASE_900,
+  LIGHT_BASE_800: colors.LIGHT_BASE_800,
+};
 
 export default {
   fontSize,
@@ -68,4 +88,5 @@ export default {
 export const themes = {
   ...colors,
   fontSize,
+  colorsEnvironment,
 };

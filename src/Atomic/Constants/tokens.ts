@@ -85,6 +85,7 @@ const mapBorderRadius: MapOptions = {
   normal: theme.default.borderRadius.normal,
   medium: theme.default.borderRadius.medium,
   big: theme.default.borderRadius.big,
+  xbig: theme.default.borderRadius.xbig,
 };
 export const transformBorderRadius = (borderRadius?: string) => {
   if (borderRadius) {

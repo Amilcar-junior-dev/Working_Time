@@ -1,35 +1,36 @@
 import {
+  PropsPadding,
   PropsSpaceHorizontal,
   PropsSpaceVertical,
-  PropsPadding,
-  PropsColors,
+  PropsBorderRadius,
 } from '../../../../Styles/Models';
 
-export interface PropsButton {
+export interface PropsContainer {
   height?: string | number;
   width?: string | number;
-  text?: string;
-  bgColor?: string;
-  color?: string;
-  align?: 'flex-star' | 'center' | 'flex-end';
-  jfContent?: 'flex-start' | 'center' | 'flex-end';
-  fDirection?: 'column' | 'row';
   pd?: PropsPadding;
+  bgColor?: string;
+  align?: 'flex-start' | 'center' | 'flex-end';
+  jfContent?: 'flex-start' | 'center' | 'flex-end';
+  bdRadius?: PropsBorderRadius;
   mt?: PropsSpaceHorizontal;
   mb?: PropsSpaceHorizontal;
   ml?: PropsSpaceVertical;
   mr?: PropsSpaceVertical;
-  onPress: () => void;
 }
-export interface PropsTouchableOpacity {
+export interface PropsBoxHeader {
   height?: string | number;
   width?: string | number;
-  bgColor?: string;
-  align?: 'flex-star' | 'center' | 'flex-end';
-  jfContent?: 'flex-start' | 'center' | 'flex-end';
-  fDirection?: 'column' | 'row';
-  color?: PropsColors;
   pd?: PropsPadding;
+  bgColor?: string;
+  align?: 'flex-start' | 'center' | 'flex-end';
+  jfContent?:
+    | 'flex-start'
+    | 'center'
+    | 'flex-end'
+    | 'space-around'
+    | 'space-between';
+  bdRadius?: PropsBorderRadius;
   mt?: PropsSpaceHorizontal;
   mb?: PropsSpaceHorizontal;
   ml?: PropsSpaceVertical;
