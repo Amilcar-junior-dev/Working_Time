@@ -1,6 +1,7 @@
 import React from 'react';
 import {View} from 'react-native';
-import {Header} from './Atomic/Atoms/Box';
+import {Circle} from './Atomic/Atoms/Box';
+import Text from './Atomic/Atoms/Text';
 import {themes} from './Styles/themeDefault';
 const App = () => {
   return (
@@ -10,14 +11,16 @@ const App = () => {
         flex: 1,
         backgroundColor: '#131313',
         alignItems: 'center',
-        justifyContent: 'center',
       }}>
-      <Header
-        height="100px"
-        width="100%"
+      <Circle
+        height="50px"
+        width="50px"
         bgColor={themes.SECUNDARY_BASE_03}
-        bdRadius="normal"
-      />
+        bdRadius="xbig"
+        jfContent="center"
+        align="center">
+        <Text fontSize="small"> </Text>
+      </Circle>
     </View>
   );
 };
