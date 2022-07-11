@@ -1,27 +1,30 @@
 import React from 'react';
-import {View} from 'react-native';
-import {Container, Separator} from './Atomic/Atoms/Box';
-// import Text from './Atomic/Atoms/Text';
+import {BoxHeader, Container, Circle} from './Atomic/Atoms/Box';
+import Text from './Atomic/Atoms/Text';
+import {PropsBoxHeader} from './Atomic/Atoms/Box/Models';
 import {themes} from './Styles/themeDefault';
-const App = () => {
+
+export const Header: React.FC<PropsBoxHeader> = ({}) => {
   return (
-    <View
-      // eslint-disable-next-line react-native/no-inline-styles
-      style={{
-        flex: 1,
-        backgroundColor: '#131313',
-        alignItems: 'center',
-      }}>
+    <BoxHeader
+      height="100px"
+      width="100%"
+      fDirection="row"
+      bgColor={themes.PRIMARY_BASE_800}>
       <Container
-        height="250px"
-        width="250px"
-        bgColor={themes.SECUNDARY_BASE_03}
-        jfContent="center"
-        align="center">
-        <Separator />
+        height="100%"
+        width="70%"
+        align="center"
+        bgColor="transparent"
+        fDirection="row">
+        <Circle height="80px" width="80px" ml="small" />
+        <Text fontSize="average" ml="small">
+          {' '}
+          Name User{' '}
+        </Text>
       </Container>
-    </View>
+      <Container height="100%" width="100%" bgColor="transparent" />
+    </BoxHeader>
   );
 };
-
-export default App;
+export default Header;

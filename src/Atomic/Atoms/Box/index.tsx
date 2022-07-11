@@ -22,6 +22,7 @@ export const Container = styled.View<PropsContainer>`
     bgColor ? bgColor : themes.LIGHT_BASE_900};
   align-items: ${({align}) => (align ? align : 'flex-start')};
   justify-content: ${({jfContent}) => (jfContent ? jfContent : 'flex-start')};
+  flex-direction: ${({fDirection}) => (fDirection ? fDirection : 'column')};
   border-radius: ${({bdRadius}) =>
     bdRadius ? transformBorderRadius(bdRadius) : 0}px;
   margin-top: ${({mt}) => (mt ? transformMarginHorizontal(mt) : 0)}px;
@@ -30,7 +31,7 @@ export const Container = styled.View<PropsContainer>`
   margin-right: ${({mr}) => (mr ? transformMarginVertical(mr) : 0)}px;
 `;
 
-export const Header = styled.View<PropsBoxHeader>`
+export const BoxHeader = styled.View<PropsBoxHeader>`
   height: ${({height}) => (height ? height : '20px')};
   width: ${({width}) => (width ? width : '100px')};
   padding: ${({pd}) => (pd ? transformPadding(pd) : 0)}px;
@@ -55,7 +56,7 @@ export const Circle = styled.View<PropsCircle>`
   align-items: ${({align}) => (align ? align : 'flex-start')};
   justify-content: ${({jfContent}) => (jfContent ? jfContent : 'flex-start')};
   border-radius: ${({bdRadius}) =>
-    bdRadius ? transformBorderRadius(bdRadius) : 0}px;
+    bdRadius ? transformBorderRadius(bdRadius) : 75}px;
   margin-top: ${({mt}) => (mt ? transformMarginHorizontal(mt) : 0)}px;
   margin-bottom: ${({mb}) => (mb ? transformMarginHorizontal(mb) : 0)}px;
   margin-left: ${({ml}) => (ml ? transformMarginVertical(ml) : 0)}px;
