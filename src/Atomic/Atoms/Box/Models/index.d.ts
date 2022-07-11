@@ -56,3 +56,13 @@ export interface PropsCircle {
   ml?: PropsSpaceVertical;
   mr?: PropsSpaceVertical;
 }
+
+export interface PropsSeparator {
+  height?: string | number;
+  width?: string | number;
+  bgColor?: string;
+  mt?: PropsSpaceHorizontal;
+  mb?: PropsSpaceHorizontal;
+  ml?: PropsSpaceVertical;
+  mr?: PropsSpaceVertical;
+}

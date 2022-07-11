@@ -1,7 +1,7 @@
 import React from 'react';
 import {View} from 'react-native';
-import {Circle} from './Atomic/Atoms/Box';
-import Text from './Atomic/Atoms/Text';
+import {Container, Separator} from './Atomic/Atoms/Box';
+// import Text from './Atomic/Atoms/Text';
 import {themes} from './Styles/themeDefault';
 const App = () => {
   return (
@@ -12,15 +12,14 @@ const App = () => {
         backgroundColor: '#131313',
         alignItems: 'center',
       }}>
-      <Circle
-        height="50px"
-        width="50px"
+      <Container
+        height="250px"
+        width="250px"
         bgColor={themes.SECUNDARY_BASE_03}
-        bdRadius="xbig"
         jfContent="center"
         align="center">
-        <Text fontSize="small"> </Text>
-      </Circle>
+        <Separator />
+      </Container>
     </View>
   );
 };
