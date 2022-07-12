@@ -3,10 +3,9 @@ import {
   PropsSpaceHorizontal,
   PropsSpaceVertical,
 } from '../../../../Styles/Models';
-export interface PropsHeader {
+export interface PropsTimeBalance {
   height?: string | number;
   width?: string | number;
-  fDirection?: 'row' | 'column';
   bgColor?: string;
   pd?: PropsPadding;
   mt?: PropsSpaceHorizontal;

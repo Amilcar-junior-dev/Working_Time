@@ -66,3 +66,15 @@ export interface PropsSeparator {
   ml?: PropsSpaceVertical;
   mr?: PropsSpaceVertical;
 }
+
+export interface PropsBoxTimeBalance {
+  height?: string | number;
+  width?: string | number;
+  bgColor?: string;
+  bdRadius?: PropsBorderRadius;
+  pd?: PropsPadding;
+  mt?: PropsSpaceHorizontal;
+  mb?: PropsSpaceHorizontal;
+  ml?: PropsSpaceVertical;
+  mr?: PropsSpaceVertical;
+}

@@ -1,30 +1,85 @@
 import React from 'react';
-import {BoxHeader, Container, Circle} from './Atomic/Atoms/Box';
+import {View} from 'react-native';
+import {BoxTimeBalance, Container} from './Atomic/Atoms/Box';
 import Text from './Atomic/Atoms/Text';
-import {PropsBoxHeader} from './Atomic/Atoms/Box/Models';
-import {themes} from './Styles/themeDefault';
+import {PropsTimeBalance} from './Atomic/Molecules/timeBalance/Models';
+import {themes} from '././Styles/themeDefault';
 
-export const Header: React.FC<PropsBoxHeader> = ({}) => {
+const TimeBalance: React.FC<PropsTimeBalance> = ({}) => {
   return (
-    <BoxHeader
-      height="100px"
-      width="100%"
-      fDirection="row"
-      bgColor={themes.PRIMARY_BASE_800}>
-      <Container
-        height="100%"
-        width="70%"
-        align="center"
-        bgColor="transparent"
-        fDirection="row">
-        <Circle height="80px" width="80px" ml="small" />
-        <Text fontSize="average" ml="small">
-          {' '}
-          Name User{' '}
-        </Text>
-      </Container>
-      <Container height="100%" width="100%" bgColor="transparent" />
-    </BoxHeader>
+    // eslint-disable-next-line react-native/no-inline-styles
+    <View style={{flex: 1, alignItems: 'center', backgroundColor: 'white'}}>
+      <BoxTimeBalance
+        height="120px"
+        width="100%"
+        bdRadius="big"
+        mt="xxxbig"
+        bgColor={themes.PRIMARY_BASE_600}>
+        <Container
+          bgColor="transparent"
+          width="100%"
+          height="30%"
+          bdRadius="big"
+          align="center"
+          jfContent="center">
+          <Text
+            fontSize="xxbig"
+            fontWeigth="bold"
+            color={themes.SECUNDARY_BASE_05}>
+            {' '}
+            12 / 07 / 2022
+          </Text>
+        </Container>
+        <Container
+          fDirection="row"
+          bgColor="transparent"
+          width="100%"
+          height="70%"
+          bdRadius="big">
+          <Container
+            width="50%"
+            height="100%"
+            bgColor="transparent"
+            bdRadius="big"
+            align="center">
+            <Text mt="medium"> Tempo Restante </Text>
+            <Container
+              width="80%"
+              height="50%"
+              bgColor="transparent"
+              align="center"
+              bdRadius="big"
+              jfContent="center">
+              <Text fontSize="xxbig" fontWeigth="900">
+                {' '}
+                00:00{' '}
+              </Text>
+            </Container>
+          </Container>
+          <Container
+            width="50%"
+            height="100%"
+            bgColor="transparent"
+            bdRadius="big"
+            align="center">
+            <Text mt="medium"> Tempo Restante </Text>
+            <Container
+              width="80%"
+              height="50%"
+              bgColor="transparent"
+              align="center"
+              bdRadius="big"
+              jfContent="center">
+              <Text fontSize="xxbig" fontWeigth="900">
+                {' '}
+                00:00{' '}
+              </Text>
+            </Container>
+          </Container>
+        </Container>
+      </BoxTimeBalance>
+    </View>
   );
 };
-export default Header;
+
+export default TimeBalance;

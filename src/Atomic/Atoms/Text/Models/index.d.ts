@@ -7,7 +7,7 @@ import {
 
 export interface PropsText {
   fontSize?: PropsFontSize;
-  fontWeigth?: string | number;
+  fontWeigth?: 'normal' | 'bold' | '500' | '600' | '700' | '800' | '900';
   color?: string;
   pd?: PropsPadding;
   mt?: PropsSpaceHorizontal;
