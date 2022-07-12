@@ -77,11 +77,11 @@ export const Separator = styled.View<PropsSeparator>`
 
 export const BoxTimeBalance = styled.View<PropsBoxTimeBalance>`
   height: ${({height}) => (height ? height : '100px')};
-  width: ${({width}) => (width ? width : '100%')};
+  width: ${({width}) => (width ? width : '90%')};
   background-color: ${({bgColor}) =>
     bgColor ? bgColor : themes.PRIMARY_BASE_700};
   border-radius: ${({bdRadius}) =>
-    bdRadius ? transformBorderRadius(bdRadius) : 0}px;
+    bdRadius ? transformBorderRadius(bdRadius) : 10}px;
   padding: ${({pd}) => (pd ? transformPadding(pd) : 0)}px;
   margin-top: ${({mt}) => (mt ? transformMarginHorizontal(mt) : 0)}px;
   margin-bottom: ${({mb}) => (mb ? transformMarginHorizontal(mb) : 0)}px;

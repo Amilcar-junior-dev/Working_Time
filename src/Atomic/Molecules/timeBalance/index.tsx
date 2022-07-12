@@ -4,14 +4,28 @@ import Text from '../../Atoms/Text';
 import {PropsTimeBalance} from '../timeBalance/Models';
 import {themes} from '../../../Styles/themeDefault';
 
-const TimeBalance: React.FC<PropsTimeBalance> = ({}) => {
+const TimeBalance: React.FC<PropsTimeBalance> = ({
+  height,
+  width,
+  bgColor,
+  bdRadius,
+  pd,
+  mt,
+  mb,
+  ml,
+  mr,
+}) => {
   return (
     <BoxTimeBalance
-      height="120px"
-      width="100%"
-      bdRadius="big"
-      mt="xxxbig"
-      bgColor={themes.PRIMARY_BASE_600}>
+      height={height}
+      width={width}
+      bdRadius={bdRadius}
+      pd={pd}
+      mt={mt}
+      mb={mb}
+      ml={ml}
+      mr={mr}
+      bgColor={bgColor}>
       <Container
         bgColor="transparent"
         width="100%"
