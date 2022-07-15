@@ -8,6 +8,7 @@ const fontSize = {
   big: theme.FONT_SIZE_BIG,
   xbig: theme.FONT_SIZE_XBIG,
   xxbig: theme.FONT_SIZE_XXBIG,
+  huge: theme.FONT_SIZE_HUGE,
 };
 
 const borderRadius = {

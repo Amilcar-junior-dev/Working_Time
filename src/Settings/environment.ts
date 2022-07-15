@@ -8,6 +8,7 @@ export const FONT_SIZE_AVERAGE = 13;
 export const FONT_SIZE_BIG = 16;
 export const FONT_SIZE_XBIG = 18;
 export const FONT_SIZE_XXBIG = 20;
+export const FONT_SIZE_HUGE = 40;
 export const FONT_WEIGTH_LIGTH = 300;
 export const FONT_WEIGTH_MEDIUM = 400;
 export const FONT_WEIGTH_BOLD = 500;

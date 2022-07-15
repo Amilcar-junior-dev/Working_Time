@@ -4,7 +4,7 @@ export interface PropsThemeDefault {
   spaces?: spacesProps;
   colors?: colorsProps;
 }
-interface colorsProps {
+export interface colorsProps {
   PRIMARY_BASE_900: string;
   PRIMARY_BASE_800: string;
   PRIMARY_BASE_700: string;
@@ -31,6 +31,7 @@ interface fontSizeProps {
   big: number;
   xbig: number;
   xxbig: number;
+  huge: number;
 }
 
 interface borderRadiusProps {
@@ -127,5 +128,6 @@ export type PropsFontSize =
   | 'average'
   | 'big'
   | 'xbig'
-  | 'xxbig';
+  | 'xxbig'
+  | 'huge';
 export type PropsBorderRadius = 'normal' | 'medium' | 'big' | 'xbig';

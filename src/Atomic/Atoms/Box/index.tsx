@@ -5,13 +5,14 @@ import {
   PropsCircle,
   PropsSeparator,
   PropsBoxTimeBalance,
+  PropsBoxInformation,
 } from './Models';
 import {
   transformPadding,
   transformMarginHorizontal,
   transformMarginVertical,
   transformBorderRadius,
-  // mapColors, FUNÇÃO NÃO FUNCIONA
+  mapColors,
 } from '../../Constants/tokens';
 import {themes} from '../../../Styles/themeDefault';
 
@@ -20,7 +21,7 @@ export const Container = styled.View<PropsContainer>`
   width: ${({width}) => (width ? width : '0px')};
   padding: ${({pd}) => (pd ? transformPadding(pd) : 0)}px;
   background-color: ${({bgColor}) =>
-    bgColor ? bgColor : themes.LIGHT_BASE_900};
+    bgColor ? mapColors(themes, bgColor) : 'transparent'};
   align-items: ${({align}) => (align ? align : 'flex-start')};
   justify-content: ${({jfContent}) => (jfContent ? jfContent : 'flex-start')};
   flex-direction: ${({fDirection}) => (fDirection ? fDirection : 'column')};
@@ -36,7 +37,8 @@ export const BoxHeader = styled.View<PropsBoxHeader>`
   height: ${({height}) => (height ? height : '20px')};
   width: ${({width}) => (width ? width : '100px')};
   padding: ${({pd}) => (pd ? transformPadding(pd) : 0)}px;
-  background-color: ${({bgColor}) => (bgColor ? bgColor : 'transparent')};
+  background-color: ${({bgColor}) =>
+    bgColor ? mapColors(themes, bgColor) : 'transparent'};
   align-items: ${({align}) => (align ? align : 'flex-start')};
   justify-content: ${({jfContent}) => (jfContent ? jfContent : 'flex-start')};
   flex-direction: ${({fDirection}) => (fDirection ? fDirection : 'column')};
@@ -53,7 +55,7 @@ export const Circle = styled.View<PropsCircle>`
   width: ${({width}) => (width ? width : '50px')};
   padding: ${({pd}) => (pd ? transformPadding(pd) : 0)}px;
   background-color: ${({bgColor}) =>
-    bgColor ? bgColor : themes.LIGHT_BASE_900};
+    bgColor ? mapColors(themes, bgColor) : 'transparent'};
   align-items: ${({align}) => (align ? align : 'flex-start')};
   justify-content: ${({jfContent}) => (jfContent ? jfContent : 'flex-start')};
   border-radius: ${({bdRadius}) =>
@@ -68,7 +70,7 @@ export const Separator = styled.View<PropsSeparator>`
   height: ${({height}) => (height ? height : '3px')};
   width: ${({width}) => (width ? width : '100%')};
   background-color: ${({bgColor}) =>
-    bgColor ? bgColor : themes.LIGHT_BASE_900};
+    bgColor ? mapColors(themes, bgColor) : 'transparent'};
   margin-top: ${({mt}) => (mt ? transformMarginHorizontal(mt) : 0)}px;
   margin-bottom: ${({mb}) => (mb ? transformMarginHorizontal(mb) : 0)}px;
   margin-left: ${({ml}) => (ml ? transformMarginVertical(ml) : 0)}px;
@@ -77,11 +79,28 @@ export const Separator = styled.View<PropsSeparator>`
 
 export const BoxTimeBalance = styled.View<PropsBoxTimeBalance>`
   height: ${({height}) => (height ? height : '100px')};
-  width: ${({width}) => (width ? width : '90%')};
+  width: ${({width}) => (width ? width : '100%')};
   background-color: ${({bgColor}) =>
-    bgColor ? bgColor : themes.PRIMARY_BASE_700};
+    bgColor ? mapColors(themes, bgColor) : 'transparent'};
   border-radius: ${({bdRadius}) =>
     bdRadius ? transformBorderRadius(bdRadius) : 10}px;
+  padding: ${({pd}) => (pd ? transformPadding(pd) : 0)}px;
+  margin-top: ${({mt}) => (mt ? transformMarginHorizontal(mt) : 0)}px;
+  margin-bottom: ${({mb}) => (mb ? transformMarginHorizontal(mb) : 0)}px;
+  margin-left: ${({ml}) => (ml ? transformMarginVertical(ml) : 0)}px;
+  margin-right: ${({mr}) => (mr ? transformMarginVertical(mr) : 0)}px;
+`;
+
+export const BoxInformation = styled.View<PropsBoxInformation>`
+  height: ${({height}) => (height ? height : '100px')};
+  width: ${({width}) => (width ? width : '100%')};
+  background-color: ${({bgColor}) =>
+    bgColor ? mapColors(themes, bgColor) : 'transparent'};
+  flex-direction: ${({fDirection}) => (fDirection ? fDirection : 'column')};
+  align-items: ${({align}) => (align ? align : 'flex-start')};
+  justify-content: ${({jfContent}) => (jfContent ? jfContent : 'flex-start')};
+  border-radius: ${({bdRadius}) =>
+    bdRadius ? transformBorderRadius(bdRadius) : 0}px;
   padding: ${({pd}) => (pd ? transformPadding(pd) : 0)}px;
   margin-top: ${({mt}) => (mt ? transformMarginHorizontal(mt) : 0)}px;
   margin-bottom: ${({mb}) => (mb ? transformMarginHorizontal(mb) : 0)}px;

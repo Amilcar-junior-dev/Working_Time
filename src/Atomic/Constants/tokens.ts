@@ -1,4 +1,5 @@
 import * as breadh from '../../Settings/environment';
+import {colorsProps} from '../../Styles/Models';
 import * as theme from '../../Styles/themeDefault';
 
 type MapOptions = {
@@ -71,6 +72,7 @@ const mapFontSize: MapOptions = {
   big: theme.default.fontSize.big,
   xbig: theme.default.fontSize.xbig,
   xxbig: theme.default.fontSize.xxbig,
+  huge: theme.default.fontSize.huge,
 };
 
 export const transformFontSize = (fontSize: string) => {
@@ -96,7 +98,7 @@ export const transformBorderRadius = (borderRadius?: string) => {
   return mapBorderRadius.undefined;
 };
 
-export const mapColors = (color: any) => {
+export const mapColors = (color: colorsProps, token: string) => {
   const data: MapOptions = {
     PRIMARY_BASE_900: color.PRIMARY_BASE_900,
     PRIMARY_BASE_800: color.PRIMARY_BASE_800,
@@ -118,5 +120,5 @@ export const mapColors = (color: any) => {
     transparente: 'transparente',
     undefined: color.LIGHT_BASE_800,
   };
-  return data;
+  return data.hasOwnProperty(token) ? data[token] : data.undefined;
 };
