@@ -9,26 +9,28 @@ export const Header: React.FC<PropsHeader> = ({
   width,
   fDirection,
   bgColor,
+  mb,
 }) => {
   return (
     <BoxHeader
       height={height}
       width={width}
       fDirection={fDirection}
+      mb={mb}
       bgColor={bgColor}>
-      <Container
-        height="100%"
-        width="70%"
-        align="center"
-        bgColor="transparent"
-        fDirection="row">
-        <Circle height="80px" width="80px" ml="small" />
+      <Container height="100%" width="70%" align="center" fDirection="row">
+        <Circle
+          height="80px"
+          width="80px"
+          ml="small"
+          bgColor="LIGHT_BASE_900"
+        />
         <Text fontSize="average" ml="small">
           {' '}
           Name User{' '}
         </Text>
       </Container>
-      <Container height="100%" width="100%" bgColor="transparent" />
+      <Container height="100%" width="100%" bgColor="LIGHT_BASE_900" />
     </BoxHeader>
   );
 };
