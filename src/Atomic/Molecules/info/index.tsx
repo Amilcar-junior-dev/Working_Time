@@ -4,7 +4,7 @@ import Text from '../../Atoms/Text';
 import {themes} from '../../../Styles/themeDefault';
 import {PropsBoxInformation} from '../../Atoms/Box/Models';
 
-const Information: React.FC<PropsBoxInformation> = ({
+const Info: React.FC<PropsBoxInformation> = ({
   height,
   width,
   bgColor,
@@ -107,4 +107,4 @@ const Information: React.FC<PropsBoxInformation> = ({
     </BoxInformation>
   );
 };
-export default Information;
+export default Info;

@@ -3,11 +3,12 @@ import {
   PropsPadding,
   PropsSpaceHorizontal,
   PropsSpaceVertical,
+  PropsColors,
 } from '../../../../Styles/Models';
 export interface PropsTimeBalance {
   height?: string | number;
   width?: string | number;
-  bgColor?: string;
+  bgColor?: PropsColors;
   bdRadius?: PropsBorderRadius;
   pd?: PropsPadding;
   mt?: PropsSpaceHorizontal;

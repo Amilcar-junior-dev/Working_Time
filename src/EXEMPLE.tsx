@@ -1,15 +1,11 @@
 import React from 'react';
 import {View} from 'react-native';
-import Information from './Atomic/Molecules/information';
+
+import Info from './Atomic/Molecules/info';
 const App = () => {
   return (
     <View>
-      <Information
-        height="200px"
-        width="100%"
-        fDirection="row"
-        bgColor="PRIMARY_BASE_500"
-      />
+      <Info fDirection="row" bgColor="PRIMARY_BASE_500" height="200px" />
     </View>
   );
 };

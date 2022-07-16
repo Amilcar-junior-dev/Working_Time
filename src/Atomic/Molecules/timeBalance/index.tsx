@@ -1,7 +1,7 @@
 import React from 'react';
 import {BoxTimeBalance, Container} from '../../Atoms/Box';
 import Text from '../../Atoms/Text';
-import {PropsTimeBalance} from '../timeBalance/Models';
+import {PropsTimeBalance} from '../../Molecules/timeBalance/Models';
 import {themes} from '../../../Styles/themeDefault';
 
 const TimeBalance: React.FC<PropsTimeBalance> = ({
@@ -27,7 +27,6 @@ const TimeBalance: React.FC<PropsTimeBalance> = ({
       mr={mr}
       bgColor={bgColor}>
       <Container
-        bgColor="transparent"
         width="100%"
         height="30%"
         bdRadius="big"
@@ -41,23 +40,12 @@ const TimeBalance: React.FC<PropsTimeBalance> = ({
           12 / 07 / 2022
         </Text>
       </Container>
-      <Container
-        fDirection="row"
-        bgColor="transparent"
-        width="100%"
-        height="70%"
-        bdRadius="big">
-        <Container
-          width="50%"
-          height="100%"
-          bgColor="transparent"
-          bdRadius="big"
-          align="center">
+      <Container fDirection="row" width="100%" height="70%" bdRadius="big">
+        <Container width="50%" height="100%" bdRadius="big" align="center">
           <Text mt="medium"> Tempo Restante </Text>
           <Container
             width="80%"
             height="50%"
-            bgColor="transparent"
             align="center"
             bdRadius="big"
             jfContent="center">
@@ -67,17 +55,11 @@ const TimeBalance: React.FC<PropsTimeBalance> = ({
             </Text>
           </Container>
         </Container>
-        <Container
-          width="50%"
-          height="100%"
-          bgColor="transparent"
-          bdRadius="big"
-          align="center">
+        <Container width="50%" height="100%" bdRadius="big" align="center">
           <Text mt="medium"> Tempo Restante </Text>
           <Container
             width="80%"
             height="50%"
-            bgColor="transparent"
             align="center"
             bdRadius="big"
             jfContent="center">
