@@ -41,7 +41,7 @@ export const BoxHeader = styled.View<PropsBoxHeader>`
     bgColor ? mapColors(themes, bgColor) : 'transparent'};
   align-items: ${({align}) => (align ? align : 'flex-start')};
   justify-content: ${({jfContent}) => (jfContent ? jfContent : 'flex-start')};
-  flex-direction: ${({fDirection}) => (fDirection ? fDirection : 'column')};
+  flex-direction: ${({fDirection}) => (fDirection ? fDirection : 'row')};
   border-radius: ${({bdRadius}) =>
     bdRadius ? transformBorderRadius(bdRadius) : 0}px;
   margin-top: ${({mt}) => (mt ? transformMarginHorizontal(mt) : 0)}px;

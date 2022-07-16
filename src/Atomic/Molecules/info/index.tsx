@@ -9,12 +9,16 @@ const Info: React.FC<PropsBoxInformation> = ({
   width,
   bgColor,
   fDirection,
+  bdRadius,
+  mt,
 }) => {
   return (
     <BoxInformation
       height={height}
       width={width}
+      mt={mt}
       bgColor={bgColor}
+      bdRadius={bdRadius}
       fDirection={fDirection}>
       <Container height="100%" width="50%">
         <Container height="20%" width="100%" fDirection="row">

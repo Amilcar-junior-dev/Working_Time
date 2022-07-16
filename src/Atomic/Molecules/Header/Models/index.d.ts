@@ -1,4 +1,5 @@
 import {
+  PropsColors,
   PropsPadding,
   PropsSpaceHorizontal,
   PropsSpaceVertical,
@@ -7,7 +8,7 @@ export interface PropsHeader {
   height?: string | number;
   width?: string | number;
   fDirection?: 'row' | 'column';
-  bgColor?: string;
+  bgColor?: PropsColors;
   pd?: PropsPadding;
   mt?: PropsSpaceHorizontal;
   mb?: PropsSpaceHorizontal;
