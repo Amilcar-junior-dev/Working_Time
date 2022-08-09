@@ -16,8 +16,21 @@
     },
     "plugins": [
         "react",
+        "import-helpers",
         "@typescript-eslint"
     ],
     "rules": {
+       "import-helpers/order-imports": [
+           "warn",
+            {
+               "newlinesBetween":"always", 
+               "groups": [ 
+                    "/^react/", 
+                    "module", 
+                    ["parent","sibling","index"]
+                ],
+               " alphabetize": { "order":"asc", "ignoreCase": true }
+            }
+        ]
     }
 }
